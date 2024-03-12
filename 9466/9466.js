@@ -48,8 +48,8 @@ function dfs(current){
     if(!visited[next]){
       dfs(next)
     }
-    else if(!finished[next]){
-      grouped+=visited[current]-visited[next]+1
+    else if(!finished[next]){     // 싸이클이 형성된 경우
+      grouped+=visited[current]-visited[next]+1 // 현재 노드 - 다음노드 +1  === 싸이클을 형성하는 노드의 개수
     }
   }
   
