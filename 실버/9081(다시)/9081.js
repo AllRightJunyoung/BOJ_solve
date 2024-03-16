@@ -1,10 +1,12 @@
+// 주어진 문자열의 다음 순열을 찾으면 됨 (다음순열코드 이해ㅔ해보기)
+
 const fs = require("fs");
-let input = fs.readFileSync("/dev/stdin").toString().trim().split("\n");
-// let input = fs
-//   .readFileSync(__dirname + "/input.txt")
-//   .toString()
-//   .trim()
-//     .split("\n");
+// let input = fs.readFileSync("/dev/stdin").toString().trim().split("\n");
+let input = fs
+  .readFileSync(__dirname + "/input.txt")
+  .toString()
+  .trim()
+    .split("\n");
 
 const t=parseInt(input.shift())
 let answer=[]
