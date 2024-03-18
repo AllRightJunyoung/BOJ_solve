@@ -45,7 +45,7 @@ for(let i=0;i<list.length;i++){
 
 for(let i=0;i<p;i++){
     let score=scores.get(list[i])
-    if(!score){
+    if(!score){ // 스코어가 존재 x (랭크 할당 가능)
         answer=rank
         break
     }
@@ -53,7 +53,7 @@ for(let i=0;i<p;i++){
         answer=score.rank
         break
     }
-    else if(taesu===list[i]){
+    else if(taesu===list[i]){ 
         if(score.count.length+score.rank>p){ // 랭킹리스트가 꽉차있을때 
             continue
         }
