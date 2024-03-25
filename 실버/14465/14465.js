@@ -5,7 +5,7 @@ let input = fs.readFileSync("/dev/stdin").toString().trim().split("\n");
 //   .toString()
 //   .trim()
 //     .split("\n");
-let [n,k,b]=input.shift().split(" ")
+// let [n,k,b]=input.shift().split(" ")
 n=Number(n)
 k=Number(k)
 b=Number(b)
